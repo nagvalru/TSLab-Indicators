@@ -13,9 +13,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="IndicatorDescription" xml:space="preserve">
-    <value>Prosvirin Moving Average based on the linear regression line value projected onto the last bar of each rolling window.</value>
+    <value>Returns the fitted linear regression value at the last bar of each rolling window.</value>
   </data>
   <data name="PeriodDescription" xml:space="preserve">
-    <value>Period of the linear regression window.</value>
+    <value>Period of the rolling linear regression window.</value>
   </data>
 </root>

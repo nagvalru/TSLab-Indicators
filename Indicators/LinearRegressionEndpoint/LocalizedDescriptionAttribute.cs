@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Reflection;
 using System.Resources;
 
-namespace PmaIndicatorHandlersV3;
+namespace TSLabIndicators.LinearRegressionEndpoint;
 
 /// <summary>
 /// Reads DescriptionAttribute text from embedded resources using the current UI culture.
@@ -12,7 +12,7 @@ namespace PmaIndicatorHandlersV3;
 public sealed class LocalizedDescriptionAttribute : DescriptionAttribute
 {
     private static readonly ResourceManager ResourceManager =
-        new("PmaIndicatorHandlersV3.Properties.Resources", Assembly.GetExecutingAssembly());
+        new("TSLabIndicators.LinearRegressionEndpoint.Properties.Resources", Assembly.GetExecutingAssembly());
 
     private readonly string _resourceKey;
 

@@ -7,7 +7,6 @@
 - `Indicators/` - исходные `.cs` файлы индикаторов и отдельные `.md` описания.
 - `src/TSLabIndicators/TSLabIndicators.csproj` - общий проект сборки всех индикаторов в одну DLL.
 - `dist/TSLabIndicators.dll` - готовая DLL для загрузки в TSLab.
-- `Создание индикаторов.md` - рабочие правила и требования к созданию индикаторов.
 
 ## Индикаторы
 
@@ -15,7 +14,7 @@
 - `KaufmanAdaptiveHighest` - адаптивный максимум на переменном периоде.
 - `KaufmanAdaptiveLowest` - адаптивный минимум на переменном периоде.
 - `HasActivePositionByName` - проверка активной позиции по имени блока входа.
-- `PmaIndicatorV3` - Prosvirin Moving Average на основе линейной регрессии.
+- `LinearRegressionEndpoint` - значение линии линейной регрессии в последней точке скользящего окна.
 
 ## Как загрузить DLL в TSLab
 

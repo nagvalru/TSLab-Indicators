@@ -17,16 +17,16 @@
     <Compile Include="..\..\Indicators\KaufmanAdaptiveHighest\KaufmanAdaptiveHighest.cs" />
     <Compile Include="..\..\Indicators\KaufmanAdaptiveLowest\KaufmanAdaptiveLowest.cs" />
     <Compile Include="..\..\Indicators\HasActivePositionByName\HasActivePositionByName.cs" />
-    <Compile Include="..\..\Indicators\PmaIndicatorV3\LocalizedDescriptionAttribute.cs" />
-    <Compile Include="..\..\Indicators\PmaIndicatorV3\PmaIndicatorHandlerV3.cs" />
+    <Compile Include="..\..\Indicators\LinearRegressionEndpoint\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="..\..\Indicators\LinearRegressionEndpoint\LinearRegressionEndpoint.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="..\..\Indicators\PmaIndicatorV3\Properties\Resources.resx">
-      <ManifestResourceName>PmaIndicatorHandlersV3.Properties.Resources</ManifestResourceName>
+    <EmbeddedResource Include="..\..\Indicators\LinearRegressionEndpoint\Properties\Resources.resx">
+      <ManifestResourceName>TSLabIndicators.LinearRegressionEndpoint.Properties.Resources</ManifestResourceName>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Indicators\PmaIndicatorV3\Properties\Resources.ru.resx">
-      <ManifestResourceName>PmaIndicatorHandlersV3.Properties.Resources.ru</ManifestResourceName>
+    <EmbeddedResource Include="..\..\Indicators\LinearRegressionEndpoint\Properties\Resources.ru.resx">
+      <ManifestResourceName>TSLabIndicators.LinearRegressionEndpoint.Properties.Resources.ru</ManifestResourceName>
     </EmbeddedResource>
   </ItemGroup>
 

@@ -13,9 +13,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="IndicatorDescription" xml:space="preserve">
-    <value>Скользящая средняя Просвирина, построенная по значению линии линейной регрессии, спроецированному на последний бар каждого окна расчета.</value>
+    <value>Возвращает значение линии линейной регрессии в последней точке каждого скользящего окна.</value>
   </data>
   <data name="PeriodDescription" xml:space="preserve">
-    <value>Период окна линейной регрессии.</value>
+    <value>Период скользящего окна линейной регрессии.</value>
   </data>
 </root>
