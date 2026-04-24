@@ -1,0 +1,12 @@
+bin/
+obj/
+*.user
+*.suo
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+dist/ru/
+
+# The public release DLL is intentionally committed.
+!dist/
+!dist/TSLabIndicators.dll

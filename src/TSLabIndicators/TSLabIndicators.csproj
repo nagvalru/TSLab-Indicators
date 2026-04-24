@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>TSLabIndicators</AssemblyName>
+    <RootNamespace>TSLabIndicators</RootNamespace>
+    <OutputPath>..\..\dist\</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <TSLabRefsDir Condition="'$(TSLabRefsDir)' == ''">C:\Users\TSLab\Desktop\ai-agent</TSLabRefsDir>
+    <TSLabHandlersDir Condition="'$(TSLabHandlersDir)' == ''">C:\Users\TSLab\Desktop\ai-agent\tmp\compilecheck\bin\Debug\net10.0</TSLabHandlersDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Indicators\KaufmanAdaptiveSMA\KaufmanAdaptiveSMA.cs" />
+    <Compile Include="..\..\Indicators\KaufmanAdaptiveHighest\KaufmanAdaptiveHighest.cs" />
+    <Compile Include="..\..\Indicators\KaufmanAdaptiveLowest\KaufmanAdaptiveLowest.cs" />
+    <Compile Include="..\..\Indicators\HasActivePositionByName\HasActivePositionByName.cs" />
+    <Compile Include="..\..\Indicators\PmaIndicatorV3\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="..\..\Indicators\PmaIndicatorV3\PmaIndicatorHandlerV3.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\Indicators\PmaIndicatorV3\Properties\Resources.resx">
+      <ManifestResourceName>PmaIndicatorHandlersV3.Properties.Resources</ManifestResourceName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\Indicators\PmaIndicatorV3\Properties\Resources.ru.resx">
+      <ManifestResourceName>PmaIndicatorHandlersV3.Properties.Resources.ru</ManifestResourceName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TSLab.Script">
+      <HintPath>$(TSLabRefsDir)\TSLab.Script.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TSLab.Utility">
+      <HintPath>$(TSLabRefsDir)\TSLab.Utility.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TSLab.DataSource">
+      <HintPath>$(TSLabRefsDir)\TSLab.DataSource.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="TSLab.Script.Handlers">
+      <HintPath>$(TSLabHandlersDir)\TSLab.Script.Handlers.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
